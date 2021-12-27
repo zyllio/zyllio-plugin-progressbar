@@ -74,7 +74,7 @@ class ProgressBarComponent extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['value'];
+    return ['data-value'];
   }
 
   attributeChangedCallback() {
