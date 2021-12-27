@@ -16,6 +16,10 @@ const CssContent = `
     height: 100%; 
   }
 
+  :host-context(body[editor]) .content {
+    pointer-events: none;
+  }
+
   .progress-bar {	
     height: 100%; 
     width: 100%; 
