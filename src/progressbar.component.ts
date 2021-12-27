@@ -96,4 +96,4 @@ class ProgressBarComponent extends HTMLElement {
   }
 }
 
-zySdk.services.registry.registerComponent(ProgressbarMetadata, ProgressBarComponent, false)
+zySdk.services.registry.registerComponent(ProgressbarMetadata, ProgressBarComponent)
