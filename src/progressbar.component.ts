@@ -16,6 +16,10 @@ const CssContent = `
     height: 100%; 
   }
 
+  :host-context(body[editor]) .content {
+    pointer-events: none;
+  }
+
   .progress-bar {	
     height: 100%; 
     width: 100%; 
@@ -70,7 +74,7 @@ class ProgressBarComponent extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['value'];
+    return ['data-value'];
   }
 
   attributeChangedCallback() {
@@ -92,4 +96,4 @@ class ProgressBarComponent extends HTMLElement {
   }
 }
 
-zySdk.services.registry.registerComponent(ProgressbarMetadata, ProgressBarComponent, false)
+zySdk.services.registry.registerComponent(ProgressbarMetadata, ProgressBarComponent)
