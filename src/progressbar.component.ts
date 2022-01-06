@@ -1,9 +1,8 @@
 /// <reference types="@zyllio/zy-sdk" />
 
-console.log('Plugin started')
+console.log('Plugin Progressbar started')
 
 import { ProgressbarMetadata } from "./progressbar.metadata";
-
 
 const CssContent = `
   :host {
@@ -66,7 +65,7 @@ class ProgressBarComponent extends HTMLElement {
 
     this.refresh();
 
-    const propertyValue = zySdk.services.factory.getPropertyValue(this, 'value')
+    const propertyValue = zySdk.services.component.getPropertyValue(this, 'value')
 
     zySdk.services.dictionary.onChange(propertyValue, () => {
       this.refresh()
@@ -84,7 +83,7 @@ class ProgressBarComponent extends HTMLElement {
 
   refresh() {
 
-    const propertyValue = zySdk.services.factory.getPropertyValue(this, 'value')
+    const propertyValue = zySdk.services.component.getPropertyValue(this, 'value')
 
     const value = zySdk.services.dictionary.getValue(propertyValue)
 
