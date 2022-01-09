@@ -11,7 +11,9 @@ The property `value` is updated by this progressbar component
 # Experiment
 
 Install this pre-built file to experiment the plugin:
-> `https://zyllio.github.io/zyllio-plugin-progressbar/dist/plugin.js`
+```
+https://zyllio.github.io/zyllio-plugin-progressbar/dist/plugin.js
+```
 
 # Development environment
 
