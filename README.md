@@ -8,6 +8,11 @@ The property `value` is updated by this progressbar component
 
 <img src="./snapshots/demo.gif">
 
+# Experiment
+
+Install this pre-built file to experiment the plugin:
+> `https://zyllio.github.io/zyllio-plugin-progressbar/dist/plugin.js`
+
 # Development environment
 
 To build this plugin, Node.js 14+ is required
