@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack && copyfiles -f src/plugin.json dist",
     "serve": "serve dist",
-    "dev": "zyllio http://localhost:3000/plugin.js custom-progressbar"
+    "tester": "zyllio http://localhost:3000/plugin.js custom-progressbar"
   },
   "keywords": [],
   "author": "",
