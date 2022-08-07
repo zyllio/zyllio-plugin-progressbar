@@ -8,14 +8,16 @@ const CssContent = `
   :host {
     display: block;
     overflow: hidden;
-    background-color: #dedede;
-    border-radius: var(--border-radius);
     width: 100%;
-    height: 30px;
+    height: 50px;
+    padding: 10px 10px;
+    box-sizing: border-box;
   }
-
+  
   .content {
     height: 100%; 
+    background-color: #dedede;
+    border-radius: var(--border-radius);
   }
 
   :host-context(body[editor]) .content {
