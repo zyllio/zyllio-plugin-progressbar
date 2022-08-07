@@ -6,9 +6,12 @@ import { ProgressbarMetadata } from "./progressbar.metadata";
 
 const CssContent = `
   :host {
+    display: block;
     overflow: hidden;
     background-color: #dedede;
     border-radius: var(--border-radius);
+    width: 100%;
+    height: 30px;
   }
 
   .content {

@@ -11,7 +11,6 @@ export const ProgressbarMetadata: ComponentMetadataModel = {
   category: 'Plugins',
   subCategory: 'Progress Bars',
   hidden: false,
-  keepRatio: false,
   properties: [{
     id: 'value',
     name: 'Value',
@@ -21,21 +20,10 @@ export const ProgressbarMetadata: ComponentMetadataModel = {
     main: true
   }],
   styles: [{
-    id: 'width',
-    name: 'Width',
-    type: 'width',
-    default: '340px'
-  },
-  {
-    id: 'height',
-    name: 'Height',
-    type: 'height',
-    default: '30px'
-  }, {
     id: '--color1',
     name: 'Color 1',
     type: 'color',
-    default: '#fca311'
+    default: 'var(--tertiary-color)'
   }, {
     id: '--color2',
     name: 'Color 2',
@@ -46,6 +34,6 @@ export const ProgressbarMetadata: ComponentMetadataModel = {
     name: 'Border radius',
     type: 'border-radius',
     default: '20px'
-  },
+  }
   ]
 }

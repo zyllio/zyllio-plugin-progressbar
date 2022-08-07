@@ -5,21 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack && copyfiles -f src/plugin.json dist",
-    "serve": "serve dist",
-    "tester": "zyllio http://localhost:3000/plugin.js custom-progressbar"
+    "tester": "zyllio ./dist plugin.js custom-progressbar"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@zyllio/zy-cli": "latest",
     "@zyllio/zy-sdk": "latest",
+    "copyfiles": "^2.4.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "copyfiles": "^2.4.1"
-  },
-  "dependencies": {
-    "@zyllio/zy-cli": "^1.0.0"
+    "webpack-cli": "^4.9.1"
   }
 }
