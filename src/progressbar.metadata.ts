@@ -23,7 +23,7 @@ export const ProgressbarMetadata: ComponentMetadataModel = {
     id: '--color1',
     name: 'Color 1',
     type: 'color',
-    default: 'var(--tertiary-color)'
+    default: 'var(--secondary-color)'
   }, {
     id: '--color2',
     name: 'Color 2',
