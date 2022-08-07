@@ -16,7 +16,7 @@ const CssContent = `
   
   .content {
     height: 100%; 
-    background-color: #dedede;
+    background-color: var(--tertiary-color);
     border-radius: var(--border-radius);
   }
 
