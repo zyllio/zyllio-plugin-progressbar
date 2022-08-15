@@ -16,7 +16,7 @@ const CssContent = `
   
   .content {
     height: 100%; 
-    background-color: var(--tertiary-color);
+    background-color: var(--theme-tertiary-color);
     border-radius: var(--border-radius);
   }
 
