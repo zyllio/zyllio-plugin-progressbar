@@ -86,11 +86,11 @@ class ProgressBarComponent extends HTMLElement {
     this.refresh()
   }
 
-  refresh() {
+  async refresh() {
 
     const propertyValue = zySdk.services.component.getPropertyValue(this, 'value')
 
-    const value = zySdk.services.dictionary.getValue(propertyValue)
+    const value = await zySdk.services.dictionary.getValue(propertyValue)
 
     const element = this.shadow.querySelector('.progress-bar') as HTMLElement
 
