@@ -1,5 +1,3 @@
-/// <reference types="@zyllio/zy-sdk" />
-
 console.log('Plugin Progressbar started')
 
 import { ProgressbarMetadata } from "./progressbar.metadata";
