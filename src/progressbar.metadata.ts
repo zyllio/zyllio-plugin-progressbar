@@ -12,7 +12,7 @@ export const ProgressbarMetadata: ComponentMetadataModel = {
   icon: IconData,
   label: 'Progress Bar',
   category: 'Plugins',
-  subCategory: 'Progress Bars',
+  subCategory: 'Plugins',
   hidden: false,
   properties: [{
     id: 'value',
