@@ -18,10 +18,6 @@ const CssContent = `
     border-radius: var(--border-radius);
   }
 
-  :host-context(body[editor]) .content {
-    pointer-events: none;
-  }
-
   .progress-bar {	
     height: 100%; 
     width: 100%; 
@@ -51,44 +47,35 @@ class ProgressBarComponent extends HTMLElement {
   constructor() {
     super();
 
-    this.shadow = this.attachShadow({ mode: 'open' });
+    this.shadow = this.attachShadow({ mode: 'open' })
 
-    this.htmlElement = document.createElement('div');
+    this.htmlElement = document.createElement('div')
     this.htmlElement.className = 'content';
-    this.styleElement = document.createElement('style');
+    this.styleElement = document.createElement('style')
   }
 
   connectedCallback() {
 
-    this.shadow.appendChild(this.styleElement);
-    this.shadow.appendChild(this.htmlElement);
+    this.shadow.appendChild(this.styleElement)
+    this.shadow.appendChild(this.htmlElement)
 
-    this.styleElement.innerHTML = CssContent;
-    this.htmlElement.innerHTML = HtmlContent;
+    this.styleElement.innerHTML = CssContent
+    this.htmlElement.innerHTML = HtmlContent
 
-    this.refresh();
-
-    const propertyValue = zySdk.services.component.getPropertyValue(this, 'value')
-
-    zySdk.services.dictionary.onChange(propertyValue, () => {
-      this.refresh()
-    })
+    this.refresh()
   }
 
   static get observedAttributes() {
-    return ['data-value'];
+    return ['value'];
   }
 
   attributeChangedCallback() {
-
     this.refresh()
   }
 
   async refresh() {
 
-    const propertyValue = zySdk.services.component.getPropertyValue(this, 'value')
-
-    const value = await zySdk.services.dictionary.getValue(propertyValue)
+    const value = this.getAttribute('value')
 
     const element = this.shadow.querySelector('.progress-bar') as HTMLElement
 

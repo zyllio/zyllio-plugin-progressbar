@@ -8,6 +8,7 @@ const IconData = `
 
 export const ProgressbarMetadata: ComponentMetadataModel = {
   id: 'custom-progressbar',
+  metadataVersion: 2,
   icon: IconData,
   label: 'Progress Bar',
   category: 'Plugins',
